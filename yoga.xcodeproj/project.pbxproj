@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C0DFBA031F2A5537008CEF15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DFBA021F2A5537008CEF15 /* main.m */; };
+		C0DFBA061F2A5537008CEF15 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DFBA051F2A5537008CEF15 /* AppDelegate.m */; };
+		C0DFBA091F2A5537008CEF15 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DFBA081F2A5537008CEF15 /* ViewController.m */; };
+		C0DFBA0C1F2A5537008CEF15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0DFBA0A1F2A5537008CEF15 /* Main.storyboard */; };
+		C0DFBA0E1F2A5538008CEF15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0DFBA0D1F2A5538008CEF15 /* Assets.xcassets */; };
+		C0DFBA111F2A5538008CEF15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0DFBA0F1F2A5538008CEF15 /* LaunchScreen.storyboard */; };
+		C0DFBA1C1F2A5539008CEF15 /* yogaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DFBA1B1F2A5538008CEF15 /* yogaTests.m */; };
+		C0DFBA271F2A5539008CEF15 /* yogaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DFBA261F2A5539008CEF15 /* yogaUITests.m */; };
+		C0EBFFD51F2AEA27001705B5 /* bbc-sport.png in Resources */ = {isa = PBXBuildFile; fileRef = C0EBFFD31F2AEA27001705B5 /* bbc-sport.png */; };
+		C0EBFFD61F2AEA27001705B5 /* business-insider.png in Resources */ = {isa = PBXBuildFile; fileRef = C0EBFFD41F2AEA27001705B5 /* business-insider.png */; };
+		C0FAABDC1F2BB17F00265847 /* yogaTypeList.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FAABDB1F2BB17F00265847 /* yogaTypeList.m */; };
+		C0FAABDF1F2BB3A800265847 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FAABDE1F2BB3A800265847 /* MainViewController.m */; };
+		C0FAABE21F2BB3D400265847 /* TypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FAABE11F2BB3D400265847 /* TypeViewController.m */; };
+		C0FAABE51F2BB3F100265847 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FAABE41F2BB3F100265847 /* DetailViewController.m */; };
+		C0FAABE81F2BB42700265847 /* SideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FAABE71F2BB42700265847 /* SideViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C0DFBA181F2A5538008CEF15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0DFB9F61F2A5536008CEF15 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0DFB9FD1F2A5537008CEF15;
+			remoteInfo = yoga;
+		};
+		C0DFBA231F2A5539008CEF15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0DFB9F61F2A5536008CEF15 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0DFB9FD1F2A5537008CEF15;
+			remoteInfo = yoga;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C0DFB9FE1F2A5537008CEF15 /* yoga.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yoga.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0DFBA021F2A5537008CEF15 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C0DFBA041F2A5537008CEF15 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C0DFBA051F2A5537008CEF15 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C0DFBA071F2A5537008CEF15 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C0DFBA081F2A5537008CEF15 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C0DFBA0B1F2A5537008CEF15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C0DFBA0D1F2A5538008CEF15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C0DFBA101F2A5538008CEF15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C0DFBA121F2A5538008CEF15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0DFBA171F2A5538008CEF15 /* yogaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = yogaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0DFBA1B1F2A5538008CEF15 /* yogaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = yogaTests.m; sourceTree = "<group>"; };
+		C0DFBA1D1F2A5539008CEF15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0DFBA221F2A5539008CEF15 /* yogaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = yogaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0DFBA261F2A5539008CEF15 /* yogaUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = yogaUITests.m; sourceTree = "<group>"; };
+		C0DFBA281F2A5539008CEF15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0EBFFD31F2AEA27001705B5 /* bbc-sport.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bbc-sport.png"; sourceTree = "<group>"; };
+		C0EBFFD41F2AEA27001705B5 /* business-insider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "business-insider.png"; sourceTree = "<group>"; };
+		C0FAABDA1F2BB17F00265847 /* yogaTypeList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yogaTypeList.h; sourceTree = "<group>"; };
+		C0FAABDB1F2BB17F00265847 /* yogaTypeList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = yogaTypeList.m; sourceTree = "<group>"; };
+		C0FAABDD1F2BB3A800265847 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		C0FAABDE1F2BB3A800265847 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		C0FAABE01F2BB3D400265847 /* TypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeViewController.h; sourceTree = "<group>"; };
+		C0FAABE11F2BB3D400265847 /* TypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeViewController.m; sourceTree = "<group>"; };
+		C0FAABE31F2BB3F100265847 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		C0FAABE41F2BB3F100265847 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		C0FAABE61F2BB42700265847 /* SideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideViewController.h; sourceTree = "<group>"; };
+		C0FAABE71F2BB42700265847 /* SideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C0DFB9FB1F2A5537008CEF15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0DFBA141F2A5538008CEF15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0DFBA1F1F2A5539008CEF15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C0DFB9F51F2A5536008CEF15 = {
+			isa = PBXGroup;
+			children = (
+				C0DFBA001F2A5537008CEF15 /* yoga */,
+				C0DFBA1A1F2A5538008CEF15 /* yogaTests */,
+				C0DFBA251F2A5539008CEF15 /* yogaUITests */,
+				C0DFB9FF1F2A5537008CEF15 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C0DFB9FF1F2A5537008CEF15 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0DFB9FE1F2A5537008CEF15 /* yoga.app */,
+				C0DFBA171F2A5538008CEF15 /* yogaTests.xctest */,
+				C0DFBA221F2A5539008CEF15 /* yogaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0DFBA001F2A5537008CEF15 /* yoga */ = {
+			isa = PBXGroup;
+			children = (
+				C0DFBA041F2A5537008CEF15 /* AppDelegate.h */,
+				C0DFBA051F2A5537008CEF15 /* AppDelegate.m */,
+				C0DFBA071F2A5537008CEF15 /* ViewController.h */,
+				C0DFBA081F2A5537008CEF15 /* ViewController.m */,
+				C0FAABDD1F2BB3A800265847 /* MainViewController.h */,
+				C0FAABDE1F2BB3A800265847 /* MainViewController.m */,
+				C0FAABE01F2BB3D400265847 /* TypeViewController.h */,
+				C0FAABE11F2BB3D400265847 /* TypeViewController.m */,
+				C0FAABE31F2BB3F100265847 /* DetailViewController.h */,
+				C0FAABE41F2BB3F100265847 /* DetailViewController.m */,
+				C0FAABE61F2BB42700265847 /* SideViewController.h */,
+				C0FAABE71F2BB42700265847 /* SideViewController.m */,
+				C0FAABDA1F2BB17F00265847 /* yogaTypeList.h */,
+				C0FAABDB1F2BB17F00265847 /* yogaTypeList.m */,
+				C0DFBA0A1F2A5537008CEF15 /* Main.storyboard */,
+				C0DFBA0D1F2A5538008CEF15 /* Assets.xcassets */,
+				C0DFBA0F1F2A5538008CEF15 /* LaunchScreen.storyboard */,
+				C0EBFFD31F2AEA27001705B5 /* bbc-sport.png */,
+				C0EBFFD41F2AEA27001705B5 /* business-insider.png */,
+				C0DFBA121F2A5538008CEF15 /* Info.plist */,
+				C0DFBA011F2A5537008CEF15 /* Supporting Files */,
+			);
+			path = yoga;
+			sourceTree = "<group>";
+		};
+		C0DFBA011F2A5537008CEF15 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C0DFBA021F2A5537008CEF15 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C0DFBA1A1F2A5538008CEF15 /* yogaTests */ = {
+			isa = PBXGroup;
+			children = (
+				C0DFBA1B1F2A5538008CEF15 /* yogaTests.m */,
+				C0DFBA1D1F2A5539008CEF15 /* Info.plist */,
+			);
+			path = yogaTests;
+			sourceTree = "<group>";
+		};
+		C0DFBA251F2A5539008CEF15 /* yogaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C0DFBA261F2A5539008CEF15 /* yogaUITests.m */,
+				C0DFBA281F2A5539008CEF15 /* Info.plist */,
+			);
+			path = yogaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C0DFB9FD1F2A5537008CEF15 /* yoga */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0DFBA2B1F2A5539008CEF15 /* Build configuration list for PBXNativeTarget "yoga" */;
+			buildPhases = (
+				C0DFB9FA1F2A5537008CEF15 /* Sources */,
+				C0DFB9FB1F2A5537008CEF15 /* Frameworks */,
+				C0DFB9FC1F2A5537008CEF15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = yoga;
+			productName = yoga;
+			productReference = C0DFB9FE1F2A5537008CEF15 /* yoga.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C0DFBA161F2A5538008CEF15 /* yogaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0DFBA2E1F2A5539008CEF15 /* Build configuration list for PBXNativeTarget "yogaTests" */;
+			buildPhases = (
+				C0DFBA131F2A5538008CEF15 /* Sources */,
+				C0DFBA141F2A5538008CEF15 /* Frameworks */,
+				C0DFBA151F2A5538008CEF15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0DFBA191F2A5538008CEF15 /* PBXTargetDependency */,
+			);
+			name = yogaTests;
+			productName = yogaTests;
+			productReference = C0DFBA171F2A5538008CEF15 /* yogaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C0DFBA211F2A5539008CEF15 /* yogaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0DFBA311F2A5539008CEF15 /* Build configuration list for PBXNativeTarget "yogaUITests" */;
+			buildPhases = (
+				C0DFBA1E1F2A5539008CEF15 /* Sources */,
+				C0DFBA1F1F2A5539008CEF15 /* Frameworks */,
+				C0DFBA201F2A5539008CEF15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0DFBA241F2A5539008CEF15 /* PBXTargetDependency */,
+			);
+			name = yogaUITests;
+			productName = yogaUITests;
+			productReference = C0DFBA221F2A5539008CEF15 /* yogaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C0DFB9F61F2A5536008CEF15 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = venkatagovardhan;
+				TargetAttributes = {
+					C0DFB9FD1F2A5537008CEF15 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = STC4XW93GM;
+						ProvisioningStyle = Automatic;
+					};
+					C0DFBA161F2A5538008CEF15 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = STC4XW93GM;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C0DFB9FD1F2A5537008CEF15;
+					};
+					C0DFBA211F2A5539008CEF15 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = STC4XW93GM;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C0DFB9FD1F2A5537008CEF15;
+					};
+				};
+			};
+			buildConfigurationList = C0DFB9F91F2A5536008CEF15 /* Build configuration list for PBXProject "yoga" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C0DFB9F51F2A5536008CEF15;
+			productRefGroup = C0DFB9FF1F2A5537008CEF15 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C0DFB9FD1F2A5537008CEF15 /* yoga */,
+				C0DFBA161F2A5538008CEF15 /* yogaTests */,
+				C0DFBA211F2A5539008CEF15 /* yogaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C0DFB9FC1F2A5537008CEF15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0EBFFD61F2AEA27001705B5 /* business-insider.png in Resources */,
+				C0EBFFD51F2AEA27001705B5 /* bbc-sport.png in Resources */,
+				C0DFBA111F2A5538008CEF15 /* LaunchScreen.storyboard in Resources */,
+				C0DFBA0E1F2A5538008CEF15 /* Assets.xcassets in Resources */,
+				C0DFBA0C1F2A5537008CEF15 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0DFBA151F2A5538008CEF15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0DFBA201F2A5539008CEF15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C0DFB9FA1F2A5537008CEF15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0DFBA091F2A5537008CEF15 /* ViewController.m in Sources */,
+				C0DFBA061F2A5537008CEF15 /* AppDelegate.m in Sources */,
+				C0DFBA031F2A5537008CEF15 /* main.m in Sources */,
+				C0FAABE81F2BB42700265847 /* SideViewController.m in Sources */,
+				C0FAABDF1F2BB3A800265847 /* MainViewController.m in Sources */,
+				C0FAABE21F2BB3D400265847 /* TypeViewController.m in Sources */,
+				C0FAABDC1F2BB17F00265847 /* yogaTypeList.m in Sources */,
+				C0FAABE51F2BB3F100265847 /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0DFBA131F2A5538008CEF15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0DFBA1C1F2A5539008CEF15 /* yogaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0DFBA1E1F2A5539008CEF15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0DFBA271F2A5539008CEF15 /* yogaUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C0DFBA191F2A5538008CEF15 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0DFB9FD1F2A5537008CEF15 /* yoga */;
+			targetProxy = C0DFBA181F2A5538008CEF15 /* PBXContainerItemProxy */;
+		};
+		C0DFBA241F2A5539008CEF15 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0DFB9FD1F2A5537008CEF15 /* yoga */;
+			targetProxy = C0DFBA231F2A5539008CEF15 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C0DFBA0A1F2A5537008CEF15 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0DFBA0B1F2A5537008CEF15 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C0DFBA0F1F2A5538008CEF15 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0DFBA101F2A5538008CEF15 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C0DFBA291F2A5539008CEF15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C0DFBA2A1F2A5539008CEF15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C0DFBA2C1F2A5539008CEF15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = STC4XW93GM;
+				INFOPLIST_FILE = yoga/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.venkatagovardhan.yoga.yoga;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C0DFBA2D1F2A5539008CEF15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = STC4XW93GM;
+				INFOPLIST_FILE = yoga/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.venkatagovardhan.yoga.yoga;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C0DFBA2F1F2A5539008CEF15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = STC4XW93GM;
+				INFOPLIST_FILE = yogaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.venkatagovardhan.yoga.yogaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/yoga.app/yoga";
+			};
+			name = Debug;
+		};
+		C0DFBA301F2A5539008CEF15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = STC4XW93GM;
+				INFOPLIST_FILE = yogaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.venkatagovardhan.yoga.yogaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/yoga.app/yoga";
+			};
+			name = Release;
+		};
+		C0DFBA321F2A5539008CEF15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = STC4XW93GM;
+				INFOPLIST_FILE = yogaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.venkatagovardhan.yoga.yogaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = yoga;
+			};
+			name = Debug;
+		};
+		C0DFBA331F2A5539008CEF15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = STC4XW93GM;
+				INFOPLIST_FILE = yogaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.venkatagovardhan.yoga.yogaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = yoga;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C0DFB9F91F2A5536008CEF15 /* Build configuration list for PBXProject "yoga" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0DFBA291F2A5539008CEF15 /* Debug */,
+				C0DFBA2A1F2A5539008CEF15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0DFBA2B1F2A5539008CEF15 /* Build configuration list for PBXNativeTarget "yoga" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0DFBA2C1F2A5539008CEF15 /* Debug */,
+				C0DFBA2D1F2A5539008CEF15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0DFBA2E1F2A5539008CEF15 /* Build configuration list for PBXNativeTarget "yogaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0DFBA2F1F2A5539008CEF15 /* Debug */,
+				C0DFBA301F2A5539008CEF15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0DFBA311F2A5539008CEF15 /* Build configuration list for PBXNativeTarget "yogaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0DFBA321F2A5539008CEF15 /* Debug */,
+				C0DFBA331F2A5539008CEF15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C0DFB9F61F2A5536008CEF15 /* Project object */;
+}
