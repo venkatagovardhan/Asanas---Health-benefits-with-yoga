@@ -155,19 +155,19 @@
 */
 
 - (IBAction)beginnerlevel:(id)sender {
-    URLString = @"https://api.mongolab.com/api/1/databases/yoga/collections/beginner?apiKey=HkJ7IvR82444hSLm5ZOSkxsYRdXPV-9r" ;
+    URLString = @"https://api.mongolab.com/api/1/databases/yoga/collections/beginner?apiKey=API_KEy" ;
     [self getCountryInfo];
     protype=@"beginner";
 }
 
 - (IBAction)IntermediateLevel:(id)sender {
-    URLString = @"https://api.mongolab.com/api/1/databases/yoga/collections/moderate?apiKey=HkJ7IvR82444hSLm5ZOSkxsYRdXPV-9r" ;
+    URLString = @"https://api.mongolab.com/api/1/databases/yoga/collections/moderate?apiKey=API_KEy" ;
     [self getCountryInfo];
     protype=@"moderate";
 }
 
 - (IBAction)AdvancedLevel:(id)sender {
-    URLString = @"https://api.mongolab.com/api/1/databases/yoga/collections/Advanced?apiKey=HkJ7IvR82444hSLm5ZOSkxsYRdXPV-9r" ;
+    URLString = @"https://api.mongolab.com/api/1/databases/yoga/collections/Advanced?apiKey=API_KEy" ;
     [self getCountryInfo];
     protype=@"Advanced";
 }
