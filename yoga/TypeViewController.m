@@ -24,6 +24,7 @@
     [super viewDidLoad];
     keyvalue=_selectedCategory;
     arrayList=_data;
+    self.navigationItem.title=_selectedCategory;
     NSLog(@"%@",arrayList);
     
 }
@@ -53,10 +54,25 @@
     static NSString *tableidentifier=@"list";
     yogaTypeList *cell=[tableView  dequeueReusableCellWithIdentifier:tableidentifier];
     
-    NSData * imageData = [[NSData alloc] initWithContentsOfURL: [NSURL URLWithString: [[arrayList objectAtIndex:indexPath.row] valueForKey:@"image"]]];
-    cell.yogapic.image=[UIImage imageWithData: imageData];
+   // NSData * imageData = [[NSData alloc] initWithContentsOfURL: [NSURL URLWithString: [[arrayList objectAtIndex:indexPath.row] valueForKey:@"image"]]];
+    //cell.yogapic.image=[UIImage imageWithData: imageData];
     cell.yoganame.text=[[arrayList objectAtIndex:indexPath.row] valueForKey:@"Asana Name"];
     cell.EnglishName.text=[[arrayList objectAtIndex:indexPath.row] valueForKey:@"English Name"];
+dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^(void){
+        NSData * imageData = [[NSData alloc] initWithContentsOfURL: [NSURL URLWithString: [[arrayList objectAtIndex:indexPath.row] valueForKey:@"image"]]];
+        if (imageData) {
+            UIImage *image = [UIImage imageWithData:imageData];
+            if(image){
+    dispatch_sync(dispatch_get_main_queue(), ^(void) {
+                UIImage *image = [UIImage imageWithData:imageData];
+                if (image) {
+                    cell.yogapic.image = image;
+                }
+            });
+            }
+        }
+ });
+    
     
     return cell;
 }

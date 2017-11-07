@@ -7,6 +7,7 @@
 //
 
 #import "DetailViewController.h"
+#import "ImageViewController.h"
 
 @interface DetailViewController ()
 @property (weak, nonatomic) IBOutlet UISegmentedControl *segmentcontrol;
@@ -26,6 +27,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationItem.title=_name;
     _instructionview.hidden=false;
     _commentview.hidden=true;
     _Durationview.hidden=true;
@@ -37,6 +39,11 @@
     NSData * imageData = [[NSData alloc] initWithContentsOfURL: [NSURL URLWithString: _image]];
     _yogapic.image=[UIImage imageWithData: imageData];
     // Do any additional setup after loading the view.
+}
+- (IBAction)fullImage:(id)sender {
+    ImageViewController *imageinfo=[self.storyboard instantiateViewControllerWithIdentifier:@"entirepic"];
+    [self.navigationController pushViewController:imageinfo animated:YES];
+    imageinfo.entireimage=_image;
 }
 
 - (void)didReceiveMemoryWarning {

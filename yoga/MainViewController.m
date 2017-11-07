@@ -13,8 +13,13 @@
     NSArray *array;
     NSString *URLString;
     NSString *protype;
+    NSString *Identifier;
     
 }
+@property (weak, nonatomic) IBOutlet UIButton *Healthbutton;
+@property (weak, nonatomic) IBOutlet UIButton *Intermediatebutton;
+@property (weak, nonatomic) IBOutlet UIButton *Advanced;
+@property (weak, nonatomic) IBOutlet UIButton *beginnerbutton;
 
 @end
 
@@ -22,6 +27,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationItem.title=@"Asanas";
+
+    _beginnerbutton.layer.cornerRadius = 20;
+   _beginnerbutton.layer.borderWidth = 3;
+    _beginnerbutton.layer.borderColor = [UIColor whiteColor].CGColor;
+    _Advanced.layer.cornerRadius = 20;
+    _Advanced.layer.borderWidth = 3;
+    _Advanced.layer.borderColor = [UIColor whiteColor].CGColor;
+    _Intermediatebutton.layer.cornerRadius = 20;
+    _Intermediatebutton.layer.borderWidth = 3;
+    _Intermediatebutton.layer.borderColor = [UIColor whiteColor].CGColor;
+    _Healthbutton.layer.cornerRadius = 20;
+    _Healthbutton.layer.borderWidth = 3;
+    _Healthbutton.layer.borderColor = [UIColor whiteColor].CGColor;
     // Do any additional setup after loading the view.
 }
 
@@ -30,7 +49,7 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)getCountryInfo{
+-(void)getInfo{
     
     
     NSURL *url = [NSURL URLWithString:URLString];
@@ -42,9 +61,6 @@
         // Check if any data returned.
         
         if (data != nil) {
-            
-            //  NSLog(@"Data is %@",data);
-            
             // Convert the returned data into a dictionary.
             
             NSError *error;
@@ -61,15 +77,9 @@
             
             else{
                 NSDictionary *dict = [returnedArray objectAtIndex:0];
-                
-                //NSLog(@"%@",dict);
                 array = [dict  valueForKey:@"items"];
-                
-                //NSString *name=[array valueForKey:@"title"];
-                
                 [self getdataout];
-                //NSLog(@"Returned Dictionary is %@",[array valueForKey:@"Asana Name"]);
-                //NSLog(@"%lu",(unsigned long)array.count);
+               
                 
             }
         }
@@ -137,7 +147,7 @@
     NSLog(@"total news %lu",(unsigned long)array.count);
     
     
-    TypeViewController *nvc=[self.storyboard instantiateViewControllerWithIdentifier:@"typesview"];
+    TypeViewController *nvc=[self.storyboard instantiateViewControllerWithIdentifier:Identifier];
     [self.navigationController pushViewController:nvc animated:YES];
     nvc.data=array;
     nvc.selectedCategory=protype;
@@ -155,21 +165,30 @@
 */
 
 - (IBAction)beginnerlevel:(id)sender {
-    URLString = @"https://api.mongolab.com/api/1/databases/yoga/collections/beginner?apiKey=HkJ7IvR82444hSLm5ZOSkxsYRdXPV-9r" ;
-    [self getCountryInfo];
+    URLString = @"https://api.mongolab.com/api/1/databases/yoga/collections/beginner?apiKey=API Key" ;
+    [self getInfo];
     protype=@"beginner";
+    Identifier=@"typesview";
 }
 
 - (IBAction)IntermediateLevel:(id)sender {
-    URLString = @"https://api.mongolab.com/api/1/databases/yoga/collections/moderate?apiKey=HkJ7IvR82444hSLm5ZOSkxsYRdXPV-9r" ;
-    [self getCountryInfo];
+    URLString = @"https://api.mongolab.com/api/1/databases/yoga/collections/moderate?apiKey=API Key" ;
+    [self getInfo];
     protype=@"moderate";
+    Identifier=@"typesview";
 }
 
 - (IBAction)AdvancedLevel:(id)sender {
-    URLString = @"https://api.mongolab.com/api/1/databases/yoga/collections/Advanced?apiKey=HkJ7IvR82444hSLm5ZOSkxsYRdXPV-9r" ;
-    [self getCountryInfo];
+    URLString = @"https://api.mongolab.com/api/1/databases/yoga/collections/Advanced?apiKey=API Key" ;
+    [self getInfo];
     protype=@"Advanced";
+    Identifier=@"typesview";
+}
+- (IBAction)Health:(id)sender {
+    URLString = @"https://api.mongolab.com/api/1/databases/yoga/collections/Health?apiKey=API Key" ;
+    [self getInfo];
+    protype=@"Health";
+    Identifier=@"caseview";
 }
 
 @end
